@@ -24,6 +24,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  position: absolute;
 }
 /*
   5. Improve media defaults
@@ -87,6 +88,10 @@ a:visited {
 header {
   text-decoration: none;
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header-top {
@@ -119,27 +124,59 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  width: 100%;
 }
 
-.about-body {
+.media-body {
   background-image: url(../images/kyle-winkle-LWawDeoXxvw-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  width: 100%;
 }
 .contact-body {
   background-image: url(../images/nick-rickert-1Gh9qREcMAk-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  width: 100%;
 }
 
 main {
-  max-width: calc(80%-10rem);
+  margin: 74px 0 0 74px;
+  width: calc(80%-10rem);
   margin-inline: 10rem;
-  min-height: 725px;
-  opacity: 40%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.index-section {
+  width: 80%;
+  height: auto;
+  opacity: 70%;
   background-color: whitesmoke;
+  padding: 24px 32px;
+  margin: 16px 32px;
+}
+
+.video-section {
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  padding: 24px 32px;
+  margin: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+iframe {
+  z-index: 4;
 }
 
 footer {
@@ -148,11 +185,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
   color: gray;
-  font-weight: bold;
   height: 48px;
   background-color: whitesmoke;
   opacity: 70%;
+  font-size: 12px;
 }
