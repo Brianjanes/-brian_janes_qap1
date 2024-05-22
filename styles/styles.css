@@ -82,7 +82,7 @@ a:hover {
 a:visited {
   text-decoration: none;
   color: white;
-  opacity: 70%;
+  opacity: 50%;
 }
 
 header {
@@ -92,26 +92,26 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  text-shadow: 3px 3px 3px black;
+  color: whitesmoke;
 }
 
 .header-top {
-  height: 48px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 70%;
 }
 .header-bottom {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 24px;
-  opacity: 60%;
 }
 
 .header-right {
   display: flex;
-  width: 240px;
+  width: 320px;
   height: 16px;
   justify-content: space-between;
   align-items: center;
@@ -134,8 +134,15 @@ header {
   background-position: center;
   width: 100%;
 }
-.contact-body {
+.safety-body {
   background-image: url(../images/nick-rickert-1Gh9qREcMAk-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+}
+.about-body {
+  background-image: url(../images/max-itin-ZavKydxYLAI-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -143,7 +150,7 @@ header {
 }
 
 main {
-  margin: 74px 0 0 74px;
+  margin: 88px 0 0 74px;
   width: calc(80%-10rem);
   margin-inline: 10rem;
   min-height: 800px;
@@ -153,26 +160,40 @@ main {
   align-items: center;
 }
 
-.index-section {
-  width: 80%;
+section {
+  width: 100%;
   height: auto;
-  opacity: 70%;
+  opacity: 80%;
   background-color: whitesmoke;
   padding: 24px 32px;
   margin: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
+}
+
+section h3 {
+  margin-bottom: 16px;
+  border-bottom: 1px solid black;
 }
 
 .video-section {
-  width: 80%;
-  height: auto;
+  width: auto;
   background-color: whitesmoke;
+  height: auto;
   padding: 24px 32px;
-  margin: 16px 32px;
+  margin: 24px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  border-radius: 4px;
+  opacity: 100%;
+  box-shadow: none;
+}
+
+.image-section {
+  opacity: 100%;
 }
 
 iframe {
@@ -181,13 +202,58 @@ iframe {
 
 footer {
   width: 100%;
-  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  height: 64px;
+  background-color: whitesmoke;
+  opacity: 80%;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-inline: 5rem;
+  text-shadow: none;
+}
+
+footer a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+footer a:hover {
+  text-decoration: none;
+  color: black;
+  transform: scale(1.1);
+}
+footer a:visited {
+  text-decoration: none;
+  color: black;
+  opacity: 50%;
+}
+
+.audio-div {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: gray;
-  height: 48px;
-  background-color: whitesmoke;
-  opacity: 70%;
-  font-size: 12px;
+  align-content: center;
+}
+
+.audio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 8px;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
 }
