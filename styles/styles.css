@@ -245,6 +245,13 @@ audio:active {
 }
 
 /* Media Queries */
+/* I added this just for the iframes because they were having a weird break @ 900px */
+@media (max-width: 900px) {
+  iframe {
+    z-index: 4;
+    width: 90%;
+  }
+}
 
 /* Tablet View */
 @media (max-width: 768px) {
@@ -277,7 +284,7 @@ audio:active {
 
   iframe {
     z-index: 4;
-    width: 100%;
+    width: 90%;
   }
 
   footer {
@@ -323,7 +330,7 @@ audio:active {
 
   iframe {
     z-index: 4;
-    width: 90dvw;
+    width: 90;
   }
 
   footer {
